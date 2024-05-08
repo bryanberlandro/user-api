@@ -4,13 +4,13 @@ import cors from 'cors';
 import UserRoute from "./routes/UsersRoute.js"
 
 const app = express();
-// app.use(cors(
-//     {
-//         origin: [''],
-//         methods: ["POST", "GET", "PATCH", ["DELETE"]],
-//         credentials: true
-//     }
-// ))
+app.use(cors(
+    {
+        origin: ['https://user-data-bryan-berlandros-projects.vercel.app/'],
+        methods: ["POST", "GET", "PATCH", ["DELETE"]],
+        credentials: true
+    }
+))
 
 app.use(cors());
 app.use(express.json());
