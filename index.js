@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import UserRoute from "./routes/UsersRoute.js"
+import User from './models/UserModel.js';
 
 const app = express();
 app.use(cors(
@@ -12,8 +13,9 @@ app.use(cors(
     }
 ))
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
+app.get('/', async (req, res) => {
+    const db = await User.find({});
+    res.send(db)
 })
 
 app.use(express.json());
