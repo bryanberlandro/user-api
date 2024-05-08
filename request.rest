@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/663a552e8979579910e1dd12
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Devi",
+    "email": "devi@gmail.com",
+    "gender": "Female"
+}
+
+###
+PATCH http://localhost:3000/users/663a552e8979579910e1dd12
+Content-Type: application/json
+
+{
+    "name": "Devi Puspita",
+    "email": "devi@gmail.com",
+    "gender": "Female"
+}
+
+###
+DELETE http://localhost:3000/users/663a552e8979579910e1dd12
