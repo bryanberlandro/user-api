@@ -7,7 +7,7 @@ const app = express();
 app.use(cors(
     {
         origin: ['https://user-data-bryan-berlandros-projects.vercel.app/'],
-        methods: ["POST", "GET", "PATCH", ["DELETE"]],
+        methods: ["POST", "GET", "PATCH", "DELETE"],
         credentials: true
     }
 ))
