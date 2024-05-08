@@ -7,7 +7,7 @@ import User from './models/UserModel.js';
 const app = express();
 app.use(cors(
     {
-        origin: ['https://user-data-bryan-berlandros-projects.vercel.app'],
+        origin: ['https://user-api-livid-two.vercel.app', 'http://localhost:5173'],
         methods: ["POST", "GET", "PATCH", "DELETE"],
         credentials: true
     }
